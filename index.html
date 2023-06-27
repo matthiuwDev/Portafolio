@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="icon" href="img/Futuristic Modern Black and White Logo-modified.png">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <button onclick="scrollToTop()" id="scrollBtn">Ir arriba</button>
+
+    <header class="header">
+
+        <a href="#" class="logo">
+            <img src="img/Futuristic Modern Black and White Logo-modified.png" alt="Logo" class="logo_nav">
+        </a>
+        <input type="checkbox" id="side-menu" class="side-menu">
+        <label for="side-menu" class="hamb"><span class="hamb-line"></span></label>
+
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="#Me">Sobre Mi</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contáctame</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <section class="initial-image"> </section>
+
+        <section class="intro principal-padding" id="Me">
+            <h1 class="principal-title">Mi Nombre es Mateo, <span class="span-text">Desarrollador Web</span></h1>
+
+            <p>Hola! Mi nombre es Mateo Espinosa, tengo 17 años y entré al mundo del desarrollo desde hace 2 años. Me considero un Joven trabajador, con deseos de crecer a nivel profesional y personal alcanzando de esta manera la adquisición de conocimientos para la vida. Te doy la Bienvenida a mi Sitio Web y te invito a explorarlo.</p>
+        </section>
+
+        <h2 class="titles principal-padding">Mis Tecnologías</h2>
+
+        <div class="container">
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <div class="carousel">
+                    <img src="img/pexels-realtoughcandycom-11035371.jpg" alt="HTML" draggable="false">
+                    <img src="img/pexels-realtoughcandycom-11035386.jpg" alt="CSS" draggable="false">
+                    <img src="img/pexels-realtoughcandycom-4007922.jpg" alt="JS" draggable="false">
+                    <img src="img/pexels-realtoughcandycom-11035390.jpg" alt="PHP" draggable="false">
+                    <img src="img/pexels-realtoughcandycom-11035471.jpg" alt="React" draggable="false">
+                    <!-- <img src="img/pexels-realtoughcandycom-11035543.jpg" alt="Angular" draggable="false"> -->
+                    <img src="img/pexels-realtoughcandycom-11035539.jpg" alt="GIT" draggable="false">
+                </div>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+        </div>
+
+
+        <section class="section-projects principal-padding" id="projects">
+            <h2 class="titles principal-padding">Mis Proyectos</h1>
+
+            <div class="container-items space-bottom">
+                <div>
+                    <img src="img/Logo.png" alt="Food" class="img-item">
+                </div>
+                <div>
+                    <h2 class="">Proyecto SEMS</h1>
+                    <p class="text-project">Software de Emprendimiento Municipal Sonsoneño (SEMS), es el nombre del proyecto que aportar al crecimiento del emprendimiento a través de la visibilidad de productos locales.</p>
+                    <a href="https://drive.google.com/file/d/1_GZm3F7YYLA8qMecnWKR1p6xrkQF4Nyv/view?usp=sharing" class="lighter">Video de Referencia</a>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="container-items space-bottom">
+                <div>
+                    <img src="img/LogoRs.png" alt="Logo" class="img-item">
+                </div>
+                <div>
+                    <h2 class="">Restaurante La merced</h1>
+                    <p class="text-project">Este Software para el Restaurante <b>La Merced</b> busca promocionar los platos distribuidos y atraer más clientes a este sitio.</p>
+                    <a href="https://drive.google.com/file/d/1dGdwKmVCyw9--CkK0mI2z64k8cKq8-O5/view?usp=drivesdk" class="lighter">Video de Referencia</a>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="container-items space-bottom">
+                <div>
+                    <img src="img/LogoKs.png" alt="Logo" class="img-item">
+                </div>
+                <div>
+                    <h2 class="">Concesionario Keithson</h1>
+                    <p class="text-project">Este Software está enfocado en la promoción y administración de la Compra/Venta Keithson, con el fin de atraer clientes y facilitar </p>
+                    <a href="https://drive.google.com/file/d/1do1ufIcmLGYOROhpgcIK0b6lk9F5lgEu/view?usp=drivesdk" class="lighter">Video de Referencia</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-presentation" id="contact">
+            <button onclick="celebracion()" class="lighter" id="button">Contrátame</button>
+            <h2 id="demo"></h2>
+            <a href="https://web.whatsapp.com/send?phone=573006235403"><img src="img/wp.svg" alt="WhatsApp" id="icon"></a>
+        </section>
+
+
+    </main>
+</body>
+</html>
