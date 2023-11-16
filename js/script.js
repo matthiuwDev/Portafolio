@@ -68,10 +68,14 @@ let scrollToTop = ( )  => document.documentElement.scrollTop = 0;
 
 function celebracion() {
     document.getElementById("button").style.display = "none";
-
-    document.getElementById("icon").style.display = "block";
-    document.getElementById("demo").innerHTML = 'Gracias, harás feliz a un Jovencito! Contactame:';
+  
+    var iconos = document.querySelectorAll("img[id^='icon']");
+    for (var i = 0; i < iconos.length; i++) {
+      iconos[i].style.display = "flex";
+    }
+  
 }
+  
 
 
 
