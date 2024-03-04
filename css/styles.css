@@ -5,6 +5,7 @@
     --studio : #8d43ad;
     --curious-blue: #3398db;
     --shamrock: #2ecc70;
+    --githubColor: #FFCBC0;
 
     --FontSi: 50px;
     --FontMd: 44px;
@@ -257,7 +258,7 @@ p{
 }
 
 .carousel img{
-    height: 340px;
+    height: 315px;
     object-fit: cover;
     user-select: none;
     margin-left: 14px;
@@ -265,14 +266,24 @@ p{
     border-radius: 25px;
 }
 
+.carousel img:nth-child(n+1){
+    object-fit:contain;
+}
+
 .carousel img:first-child{
     margin-left: 0px;
 
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 980px) {
     .carousel img{
         width: calc(100% / 2);
+    }
+
+    .enlaces{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 }
 
@@ -310,6 +321,14 @@ p{
     border-radius: 25px;
     color: black;
     border: none;
+    background-color: var(--curious-blue);
+}
+
+.lighterTwo{
+    background-color: var(--githubColor);
+}
+
+.lighterThree{
     background-color: var(--shamrock);
 }
 
