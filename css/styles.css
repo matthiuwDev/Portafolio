@@ -293,6 +293,58 @@ p{
     }
 }
 
+/*Educación*/
+.section-education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.education-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.education-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.education-card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.certificate-link {
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #ff6f61;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.certificate-link:hover {
+    background-color: #e65c50;
+}
+
+
 /*Proyectos*/
 
 .section-projects{
@@ -375,5 +427,9 @@ p{
 
 #icon{
     display: none;
+}
+
+.iconosTecnologia{
+    margin: 10px 10px;
 }
 
