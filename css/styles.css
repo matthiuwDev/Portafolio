@@ -6,8 +6,8 @@
   --curious-blue: #3398db;
   --shamrock: #2ecc70;
   --githubColor: #FFCBC0;
-  --FontSi: 50px;
-  --FontMd: 44px;
+  --FontSi: clamp(32px, 5vw + 10px, 50px);
+  --FontMd: clamp(26px, 4vw + 5px, 44px);
   --FontSm: 17px;
 }
 
@@ -21,6 +21,8 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #fcfcfc;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 main {
@@ -271,7 +273,8 @@ p {
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.2s ease;
   box-shadow: 0 4px 10px rgba(255, 111, 97, 0.3);
-  white-space: nowrap;
+  white-space: normal;
+  text-align: center;
 }
 .btn-cv:hover, .btn-cv:focus-visible {
   background-color: #e65c50;
@@ -381,7 +384,7 @@ p {
 
 @media screen and (max-width: 980px) {
   .wrapper .carousel img {
-    width: calc(100% / 2);
+    width: calc(100% / 2 - 14px);
   }
   .enlaces {
     display: flex;
@@ -390,8 +393,11 @@ p {
   }
 }
 @media screen and (max-width: 550px) {
+  .container {
+    padding: 0 15px;
+  }
   .wrapper .carousel img {
-    width: 100%;
+    width: calc(100% - 14px);
   }
 }
 
